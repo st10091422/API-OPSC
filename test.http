@@ -1,0 +1,78 @@
+POST http://localhost:3000/api/v1/user/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "user2",
+    "email": "user2@gmail.com",
+    "password": "user123"
+}
+
+
+###
+POST http://localhost:3000/api/v1/user/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "user1@gmail.com",
+    "password": "user123"
+} 
+
+
+###
+POST http://localhost:3000/api/v1/user/signin-sso HTTP/1.1
+content-type: application/json
+
+{
+    "username": "user1@gmail.com",
+    "password": "user123"
+} 
+
+###
+POST http://localhost:3000/api/v1/user/signup-sso HTTP/1.1
+content-type: application/json
+
+{
+    "username": "user1",
+    "email": "user1@gmail.com",
+    "password": "user123"
+} 
+
+
+###
+GET http://localhost:3000/api/V1/category/ZaoqjuUnpgO6fYdvrSk5NUjQJbx2 HTTP/1.1
+
+###
+POST http://localhost:3000/api/v1/category HTTP/1.1
+content-type: application/json
+
+{
+    "userid": "ZaoqjuUnpgO6fYdvrSk5NUjQJbx2",
+    "name": "category",
+    "icon": "transportation"
+}
+
+
+###
+GET http://localhost:3000/api/v1/transaction/ZaoqjuUnpgO6fYdvrSk5NUjQJbx2 HTTP/1.1
+
+###
+POST http://localhost:3000/api/v1/transaction HTTP/1.1
+content-type: application/json
+
+{
+    "userid": "ZaoqjuUnpgO6fYdvrSk5NUjQJbx2",
+    "title": "transaction 1",
+    "amount": 2500.00,
+    "date" : 1726689240830,
+    "categoryid": "M7HIUurYVcVTzmGhwzAA", 
+    "description": "this is a category"
+}
+
+###
+PUT http://localhost:3000/api/v1/user/ZaoqjuUnpgO6fYdvrSk5NUjQJbx2 HTTP/1.1
+content-type: application/json
+
+{
+    "email": "user1@gmail.com",
+    "username": "user1"
+} 
